@@ -1,0 +1,30 @@
+
+> portfolio@0.0.0 build
+> vite build
+
+[33mYou are using Node.js 20.17.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.[39m
+[36mrolldown-vite v7.2.5 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 995 modules transformed.
+[31m✗[39m Build failed in 754ms
+[31merror during build:
+[31mBuild failed with 1 error:
+
+[plugin @tailwindcss/vite:generate:build] D:/haswinraj porfolio/portfolio/src/index.css
+Error: Cannot apply unknown utility class `glow-border`
+    at onInvalidCandidate (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:21:1511)
+    at Ce (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:16:36326)
+    at file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:21:355
+    at br (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:3:1718)
+    at I (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:3:1377)
+    at Ae (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:21:172)
+    at Wi (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:38:294)
+    at async Za (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:38:631)
+    at async rf (file:///D:/haswinraj%20porfolio/portfolio/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs:38:1406)
+    at async lu (file:///D:/haswinraj%20porfolio/portfolio/node_modules/@tailwindcss/node/dist/index.mjs:10:3458)[31m
+    at aggregateBindingErrorsIntoJsError (file:///D:/haswinraj%20porfolio/portfolio/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2659:18)
+    at unwrapBindingResult (file:///D:/haswinraj%20porfolio/portfolio/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2634:128)
+    at #build (file:///D:/haswinraj%20porfolio/portfolio/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:4433:34)
+    at async buildEnvironment (file:///D:/haswinraj%20porfolio/portfolio/node_modules/vite/dist/node/chunks/node.js:33468:64)
+    at async Object.build (file:///D:/haswinraj%20porfolio/portfolio/node_modules/vite/dist/node/chunks/node.js:33871:19)
+    at async Object.buildApp (file:///D:/haswinraj%20porfolio/portfolio/node_modules/vite/dist/node/chunks/node.js:33868:153)
+    at async CAC.<anonymous> (file:///D:/haswinraj%20porfolio/portfolio/node_modules/vite/dist/node/cli.js:629:3)[39m

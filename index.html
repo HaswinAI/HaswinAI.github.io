@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haswin Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #111827; /* Tailwind gray-900 */
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(59, 130, 246, 0.2);
+        border-top: 4px solid #3b82f6;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .loading-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        color: white;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <p>Loading Portfolio...</p>
+      </div>
+    </div>
+    <script>
+      // Global error handler to catch and log any JavaScript errors
+      window.addEventListener('error', function(e) {
+        console.error('Global error:', e.error);
+        document.body.style.backgroundColor = '#ff0000'; // Red background to indicate error
+        document.querySelector('.loading-container').innerHTML = '<div style="color:white;text-align:center"><h2>Error Loading Application</h2><p>' + e.message + '</p><p>Check console for details</p></div>';
+      });
+      
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('Unhandled promise rejection:', e.reason);
+        document.body.style.backgroundColor = '#ff6600'; // Orange background for promise errors
+        document.querySelector('.loading-container').innerHTML = '<div style="color:white;text-align:center"><h2>Application Error</h2><p>Unhandled Promise Rejection</p><p>Check console for details</p></div>';
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

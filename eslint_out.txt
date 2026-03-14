@@ -1,0 +1,93 @@
+﻿
+D:\haswinraj porfolio\portfolio\src\components\About.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u             no-unused-vars
+  9:11  error  'controls' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\Certificates.jsx
+   2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u              no-unused-vars
+  67:9   error  'goToImage' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\Contact.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u             no-unused-vars
+  7:11  error  'controls' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\CustomCursor.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\ErrorBoundary.jsx
+  9:37  error  'error' is defined but never used  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\Gallery.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u        no-unused-vars
+  2:18  error  'useScroll' is defined but never used. Allowed unused vars must match /^[A-Z_]/u     no-unused-vars
+  2:29  error  'useTransform' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\HackerText.jsx
+   5:12  error    'isHovering' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                  no-unused-vars
+  15:28  error    'prev' is defined but never used                                                                            no-unused-vars
+  39:8   warning  React Hook useEffect has a missing dependency: 'animate'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+D:\haswinraj porfolio\portfolio\src\components\Hero.jsx
+   2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   no-unused-vars
+  57:36  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  55 |             key={index}
+  56 |             className="absolute opacity-20 transition-all duration-300 pointer-events-none"
+> 57 |             initial={{ x: -100, y: Math.random() * 30 }}
+     |                                    ^^^^^^^^^^^^^ Cannot call impure function
+  58 |             animate={{ x: "120vw" }}
+  59 |             transition={{
+  60 |               x: {  react-hooks/purity
+
+D:\haswinraj porfolio\portfolio\src\components\Internship.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\Loader.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\Navigation.jsx
+  1:10  error  'useState' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                    no-unused-vars
+  1:20  error  'useEffect' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                   no-unused-vars
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                      no-unused-vars
+  4:10  error  'addOptimizedScrollListener' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\ParticlesBackground.jsx
+   1:18  error  'useFrame' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              no-unused-vars
+   3:10  error  'useState' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              no-unused-vars
+  28:24  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+  26 |   // No animation for better performance, just static particles
+  27 |   return (
+> 28 |     <Points positions={pointsRef.current} stride={3} frustumCulled={true}>
+     |                        ^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  29 |       <PointMaterial
+  30 |         transparent
+  31 |         color="#3b82f6"  react-hooks/refs
+
+D:\haswinraj porfolio\portfolio\src\components\ProfileLogo.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  3:53  error  'showInitials' is assigned a value but never used                              no-unused-vars
+  3:74  error  'initials' is assigned a value but never used                                  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\Projects.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\Skills.jsx
+   2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  38:11  error  'FaRobot' is not defined                                                       no-undef
+  42:53  error  'FaRobot' is not defined                                                       no-undef
+  44:43  error  'FaRobot' is not defined                                                       no-undef
+  45:34  error  'FaRobot' is not defined                                                       no-undef
+
+D:\haswinraj porfolio\portfolio\src\components\Timeline.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\haswinraj porfolio\portfolio\src\components\TypewriterText.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Γ£û 36 problems (35 errors, 1 warning)
+
